@@ -1,5 +1,5 @@
-# MP #0: The Basics
-### Due: Monday, September 11, 11:59PM
+# MP 0: The Basics
+### Due: TBD
 
 ## Table of Contents
 1. [Assignment](#assignment)
@@ -10,7 +10,6 @@
 
 ## Assignment
 This programming assignment has two parts.
-
 
 ### Part A
 
@@ -26,8 +25,7 @@ You will be using [Codepen](https://codepen.io/) for this part. You will have to
 5. The image should have a height and width of 150px.
 
 #### Optional
-If you'd like to get some hands-on experience with Javascript before the next MP, you may attempt to recreate [this example](https://uiuc-web-programming.github.io/su17/images/mp0.gif). Although this will not be graded, understanding this early-on will make your life significantly easier for the next MP! :)
-
+If you'd like to get some hands-on experience with Javascript before the next MP, you may attempt to recreate [this example](https://uiuc-web-programming.github.io/sp19/images/mp0.gif). Although this will not be graded, understanding this early-on will make your life significantly easier for the next MP! :)
 
 ### Part B
 
@@ -61,7 +59,7 @@ You will be setting up your development environment as detailed in [Part 4](#env
 ## Environment Setup Guide
 0. Install [Node.js LTS](https://nodejs.org/en/) and [Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
 1. Clone the repository:
-`git clone https://github.com/uiuc-web-programming/mp0_starter_17.git mp0`, then `cd mp0`
+`git clone https://github.com/uiuc-web-programming/mp0_starter.git mp0`, then `cd mp0`
 2. Install dependencies:
 `npm install`
 3. Run the dev server:
