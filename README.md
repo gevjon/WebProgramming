@@ -1,5 +1,5 @@
 # MP 0: The Basics
-### Due: TBD
+### Due: Monday, Jan 28, 11:59PM
 
 ## Table of Contents
 1. [Assignment](#assignment)
