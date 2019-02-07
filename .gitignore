@@ -5,3 +5,11 @@ mp0/node_modules/*
 mp0/public/
 mp0/public/*
 .DS_Store
+mp1_starter/.idea/
+mp1_starter/.idea/*
+mp1_starter/node_modules
+mp1_starter/node_modules/*
+mp1_starter/public/
+mp1_starter/public/*
+mp1_starter/dist/
+mp1_starter/dist/*% 
