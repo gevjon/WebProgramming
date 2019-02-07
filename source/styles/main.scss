@@ -1,3 +1,11 @@
 body {
   /* Your CSS here. */
+  background-color: pink;
+  .centerMe{
+        //margin: 0 auto;
+    // position: absolute;
+    // left: 50%;
+    // transform: translate(-50%,0);
+    text-align: center;
+  }
 }
