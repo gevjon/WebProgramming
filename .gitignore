@@ -1,7 +1,7 @@
-.idea/
-.idea/*
-node_modules
-node_modules/*
-public/
-public/*
+mp0/.idea/
+mp0/.idea/*
+mp0/node_modules
+mp0/node_modules/*
+mp0/public/
+mp0/public/*
 .DS_Store
