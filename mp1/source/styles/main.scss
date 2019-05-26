@@ -1,4 +1,63 @@
 body {
+    margin: 0;
+    padding: 0;
     width: 100%;
+    background-color: white;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+    hover{
+        display: block;
+        background-color: grey;
+        text-decoration: none;
+    }
+}
+.main-header {
+    height: 10vh;
     background-color: coral;
+    .main-nav{
+        ul{
+            margin: 0;
+            padding: 0;
+            list-style-type:none;
+            text-align: left;
+        }
+        li {
+            float: left;
+        }
+        a {
+            display: block;
+            text-decoration: none;
+            padding: 20px;
+            color:white;
+            font-style: bold;
+            font-weight: bold;
+        }
+        a:hover{
+            color:rgb(224, 61, 2);
+            font-weight: bolder;
+            box-shadow: 5px;
+        }
+    }
+}
+
+.main-footer{
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    height: 15vh;
+    width: 100%;
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+.main-disclosure{
+    position: relative;
+    padding: 30px;
+}
+
+.main-content{
+    min-height: 90vh;
 }
