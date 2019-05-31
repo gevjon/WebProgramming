@@ -1,3 +1,6 @@
+html{
+    scroll-behavior: smooth;
+}
 body {
     margin: 0;
     padding: 0;
@@ -52,11 +55,13 @@ body {
     background-color:coral;
     color: white;
     text-align: center;
+
+    .main-disclosure{
+        position: relative;
+        padding: 30px;
+    }
 }
-.main-disclosure{
-    position: relative;
-    padding: 30px;
-}
+
 
 .main-content{
     padding-top: 10vh;
@@ -76,12 +81,6 @@ body {
     a{
         text-decoration: none;
     }
-    // hr {
-    //     width: 25vh;
-    //     margin-top:-10px;
-    //     padding-top:0;
-    //     border: 3px solid white;
-    // }
 }
 
 #gallery{
@@ -115,6 +114,24 @@ body {
     height: 60vh;
     background-color:rgb(192, 167, 158);
     color: white;
+    h2{
+        column-span: all;
+        clear: both;
+    }
+    p{
+        margin:0;
+        padding:0;
+    }
+    #about-content{
+        column-count: 3;
+        column-width: 30%;
+        column-gap: 100px;
+        text-align: left;
+        padding-top: 5vh;
+        padding-bottom:  5vh;
+        padding-left: 10vh;
+        padding-right: 10vh;
+    }
 }
 
 #contact{
