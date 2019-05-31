@@ -14,6 +14,7 @@ body {
     width: 100%;
     top: 0;
     .main-nav{
+        font-size: 1em;
         ul{
             margin: 0;
             padding: 0;
@@ -33,10 +34,10 @@ body {
             font-weight: bold;
         }
         a:hover{
-            color:rgb(224, 61, 2);
+            color:#e03d02;
             font-weight: bolder;
             box-shadow: 5px;
-            background-color:lightgray;
+            background-color:#d3d3d3;
             opacity: 0.6;
         }
     }
@@ -85,19 +86,25 @@ body {
 
 #gallery{
     min-height: 60vh;
+    height: auto;
     img {
         width: 15vh;
         height: 22vh;
     }
     ul {
         margin: auto;
-        width: 50%;
+        height: auto;
+        width: 80%;
         padding-top: 15vh;
         list-style: none;
+        display: inline-block;
     }
     li {
         float: left;
-        padding: 20px;
+        // padding: 20px;
+        height: auto;
+        margin:auto;
+        padding: 3vh;
     }
     a:hover{
         opacity: 0.6;

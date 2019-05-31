@@ -10,17 +10,17 @@
 </head>
 
 <body>
-    <header class="main-header">
-        <div class="main-nav">
+    <header class="main-header" id="main-header">
+        <div class="main-nav" id="main-nav">
             <ul>
                 <li>
-                    <a href="index.html"> GALLERY </a>
+                    <a href="index.html" id="nav_gallery"> GALLERY </a>
                 </li>
                 <li>
-                    <a href="index.html"> ABOUT </a>
+                    <a href="index.html" id="nav_about"> ABOUT </a>
                 </li>
                 <li>
-                    <a href="index.html"> CONTACT </a>
+                    <a href="index.html" id="nav_contact"> CONTACT </a>
                 </li>
             </ul>
         </div>
@@ -51,6 +51,7 @@
                 </li>
             </ul>
         </section>
+
         <section id="about">
             <h2> ABOUT </h2>
             <p> This is my personal showcase website, for sharing the funny part of life.</p>
@@ -68,5 +69,65 @@
 
 
 </body>
+
+<script type="text/javascript">
+    window.addEventListener('scroll', () => {
+        let bar = document.getElementById("main-header");
+        let text = document.getElementById("main-nav");
+
+        let ypos = window.pageYOffset;
+        let scrollH = document.body.scrollHeight;
+        //change gradually
+        let op = Math.max(0.5, 1 - 0.5 * ypos / scrollH);
+        let barH = Math.min(12, 10 + 2 * ypos / scrollH);
+        let textS = Math.min(1.1, 1 + 0.1 * ypos / scrollH);
+        //navbar enlarge effect
+        if (ypos > 100) {
+            bar.style.height = `${barH}vh`;
+            text.style.fontSize = `${textS}em`;
+            bar.style.opacity = op;
+        } else {
+            bar.style.height = "10vh";
+            text.style.fontSize = "1em";
+            bar.style.opacity = 1;
+        }
+
+        //scroll position indicator (at navbar)
+        console.log(ypos);
+        if (ypos < 250) {
+            document.getElementById("nav_gallery").style.backgroundColor = "#d3d3d3";
+            document.getElementById("nav_gallery").style.opacity = 0.6;
+            document.getElementById("nav_gallery").style.color = "#e03d02";
+            document.getElementById("nav_about").style.backgroundColor = "transparent";
+            document.getElementById("nav_contact").style.backgroundColor = "transparent";
+            document.getElementById("nav_about").style.color = "white";
+            document.getElementById("nav_about").style.opacity = 1;
+            document.getElementById("nav_contact").style.color = "white";
+            document.getElementById("nav_contact").style.opacity = 1;
+        }
+        else if (ypos < 500) {
+            document.getElementById("nav_about").style.backgroundColor = "#d3d3d3";
+            document.getElementById("nav_about").style.opacity = 0.6;
+            document.getElementById("nav_about").style.color = "#e03d02";
+            document.getElementById("nav_gallery").style.backgroundColor = "transparent";
+            document.getElementById("nav_contact").style.backgroundColor = "transparent";
+            document.getElementById("nav_gallery").style.color = "white";
+            document.getElementById("nav_gallery").style.opacity = 1;
+            document.getElementById("nav_contact").style.color = "white";
+            document.getElementById("nav_contact").style.opacity = 1;
+        }
+        else {
+            document.getElementById("nav_contact").style.backgroundColor = "#d3d3d3";
+            document.getElementById("nav_contact").style.opacity = 0.6;
+            document.getElementById("nav_contact").style.color = "#e03d02";
+            document.getElementById("nav_gallery").style.backgroundColor = "transparent";
+            document.getElementById("nav_about").style.backgroundColor = "transparent";
+            document.getElementById("nav_about").style.color = "white";
+            document.getElementById("nav_about").style.opacity = 1;
+            document.getElementById("nav_gallery").style.color = "white";
+            document.getElementById("nav_gallery").style.opacity = 1;
+        }
+    });
+</script>
 
 </html>
